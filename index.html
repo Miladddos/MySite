@@ -1,12 +1,31 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وب‌سایت من</title>
-</head>
-<body>
-    <h1>به وب‌سایت من خوش آمدید!</h1>
-    <p>این یک وب‌سایت است که با استفاده از GitHub Pages راه‌اندازی شده است.</p>
-</body>
-</html>
+<button id="myButton">کلیک کنید</button>
+```
+
+2. **استایل‌دهی به دکمه با CSS:**
+
+```css
+#myButton {
+    background-color: #4CAF50; /* رنگ پس‌زمینه */
+    color: white; /* رنگ متن */
+    padding: 15px 32px; /* فاصله داخلی */
+    text-align: center; /* تراز متن */
+    text-decoration: none; /* زیرخط */
+    display: inline-block; /* نمایش دکمه به‌صورت خطی */
+    font-size: 16px; /* اندازه فونت */
+    margin: 4px 2px; /* فاصله بین دکمه‌ها */
+    cursor: pointer; /* تغییر نشانگر ماوس */
+    border: none; /* بدون حاشیه */
+    border-radius: 4px; /* گوشه‌های گرد */
+}
+
+#myButton:hover {
+    background-color: #45a049; /* تغییر رنگ روی هاور */
+}
+```
+
+3. **اضافه کردن عملکرد با JavaScript:**
+
+```javascript
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("دکمه کلیک شد!");
+});
